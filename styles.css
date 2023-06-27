@@ -1,0 +1,126 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/WoodBackround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Pie de página */
+.navbar {
+    background-color: beige;
+    opacity: .5;
+}
+
+.navbar-toggler {
+color: rgb(35, 151, 35) !important;
+}
+
+nav i {
+    padding: 20px;
+}
+
+nav div ul {
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: brown !important;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black !important;
+}
+
+/* Banner en Index*/
+.jumbotron {
+    background-image: url(./assets/Escritorio\ de\ trabajo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:beige;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.jumbotron h1 {
+font-size: 50px;
+}
+
+.jumbotron p {
+font-size: 20px;
+margin-left: 15px;
+}
+
+section {
+background-color: bisque;
+display: flex;
+flex-direction: column;
+height: 100px;
+align-items: center;
+padding: 15px;
+}
+
+p {
+font-weight: bold;
+}
+
+/* Servicios con Grid en Index*/
+article {
+    background-image: url(./assets/Fondo\ beige.jpg);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgba(39, 7, 7, .5);
+    text-align: center;
+    padding: 2rem;
+    color: black;
+}
+
+/* Pie de página */
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+
+footer div div:hover {
+    background-color:rgb(235, 212, 179);
+}
+
+.notaAlPie {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/green\ and\ paper.jpg);
+    height: 60%;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.casillero {
+    width: 60%;
+    padding: 5px;
+}
+
+button {
+    background-color: rgb(68, 126, 68) !important;
+}
