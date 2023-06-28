@@ -75,9 +75,9 @@ article {
     height: 100px;
     background-position: center;
     background-size: cover;
-    border: 3px solid rgba(39, 7, 7, .5);
+    border: 6px solid rgba(39, 7, 7, .5);
     text-align: center;
-    padding: 2rem;
+    padding: 25px;
     color: black;
 }
 
@@ -106,6 +106,12 @@ footer div div:hover {
     font-size: 20px;
 }
 
+/* Banner Contacto */
+.bannerContacto {
+    height: 400px;
+}
+
+/* Formulario de Contacto */
 form {
     display: flex;
     flex-direction: column;
@@ -115,12 +121,63 @@ form {
     gap: 5px;
 }
 
-
 .casillero {
-    width: 60%;
+    width: 50%;
     padding: 5px;
 }
 
 button {
     background-color: rgb(68, 126, 68) !important;
+}
+
+/* Nosotros - Descripción */
+.descripción {
+    display: flex;
+    background-image: url(./assets/green\ and\ paper.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid rgba(39, 7, 7, .5);
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+.párrafoDescripción {
+    padding: 2rem;
+    margin: auto;
+}
+
+/* Servicios */
+.gridServicios{
+    height: 160px;
+    border: 10px solid rgba(39, 7, 7, .5);
+    padding: 10px;
+}
+
+.listaServicios {
+    list-style: none;
+}
+
+/* Preguntas frecuentes */
+.containerPreguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: beige;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.preguntas h6 p {
+    display: block;
 }
