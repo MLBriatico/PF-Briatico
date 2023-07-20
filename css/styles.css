@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 body {
-    background: url(./assets/WoodBackround.jpg);
+    background: url(../assets/WoodBackround.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -35,7 +35,7 @@ a:hover {
 
 /* Banner en Index*/
 .jumbotron {
-    background-image: url(./assets/Escritorio\ de\ trabajo.jpeg);
+    background-image: url(../assets/Escritorio\ de\ trabajo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     color:beige;
@@ -67,7 +67,7 @@ font-weight: bold;
 
 /* Servicios con Grid en Index*/
 article {
-    background-image: url(./assets/Fondo\ beige.jpg);
+    background-image: url(../assets/Fondo\ beige.jpg);
     height: 100px;
     background-position: center;
     background-size: cover;
@@ -111,7 +111,7 @@ footer div div:hover {
 form {
     display: flex;
     flex-direction: column;
-    background-image: url(./assets/green\ and\ paper.jpg);
+    background-image: url(../assets/green\ and\ paper.jpg);
     height: 60%;
     align-items: center;
     gap: 5px;
@@ -129,7 +129,7 @@ button {
 /* Nosotros - Descripción */
 .descripción {
     display: flex;
-    background-image: url(./assets/green\ and\ paper.jpg);
+    background-image: url(../assets/green\ and\ paper.jpg);
     height: 500px;
     background-position: center;
     background-size: cover;
