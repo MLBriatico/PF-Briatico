@@ -1,179 +1,184 @@
+@charset "UTF-8";
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-    background: url(../assets/WoodBackround.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(../assets/WoodBackround.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Pie de página */
+/* NavBar */
 .navbar {
-    background-color: beige;
-    opacity: .5;
+  background-color: beige;
+  opacity: 0.5;
+  height: 5rem;
 }
-
-nav i {
-    padding: 20px;
+.navbar i {
+  padding: 20px;
 }
 
 nav div ul {
-    gap: 2rem;
+  gap: 2rem;
 }
 
 nav ul li a {
-    color: brown !important;
-    font-weight: bold;
+  color: brown !important;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 a:hover {
-    color: black !important;
+  color: black !important;
 }
 
 /* Banner en Index*/
 .jumbotron {
-    background-image: url(../assets/Escritorio\ de\ trabajo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:beige;
-    font-size: 50px;
-    margin-bottom: 0;
+  background-image: url(../assets/Escritorio\ de\ trabajo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: beige;
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 .jumbotron h1 {
-font-size: 50px;
+  font-size: 50px;
 }
 
 .jumbotron p {
-font-size: 20px;
-margin-left: 15px;
+  font-size: 20px;
+  margin-left: 15px;
 }
 
 section {
-background-color: bisque;
-display: flex;
-flex-direction: column;
-height: 100px;
-align-items: center;
-padding: 15px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  padding: 15px;
 }
 
 p {
-font-weight: bold;
+  font-weight: bold;
 }
 
 /* Servicios con Grid en Index*/
 article {
-    background-image: url(../assets/Fondo\ beige.jpg);
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-    border: 6px solid rgba(39, 7, 7, .5);
-    text-align: center;
-    padding: 25px;
-    color: black;
+  background-image: url(../assets/Fondo\ beige.jpg);
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  border: 6px solid rgba(39, 7, 7, 0.5);
+  text-align: center;
+  padding: 25px;
+  color: black;
 }
 
 /* Pie de página */
 footer div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-img{
-    display: flex;
-    height: 30px;
-    width: 30px;
+img {
+  display: flex;
+  height: 30px;
+  width: 30px;
 }
 
 footer div div:hover {
-    background-color:rgb(235, 212, 179);
+  background-color: rgb(235, 212, 179);
 }
 
 .notaAlPie {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Banner Contacto */
 .bannerContacto {
-    height: 400px;
+  height: 400px;
 }
 
 /* Formulario de Contacto */
 form {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../assets/green\ and\ paper.jpg);
-    height: 60%;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/green\ and\ paper.jpg);
+  height: 60%;
+  align-items: center;
+  gap: 5px;
 }
 
 .casillero {
-    width: 50%;
-    padding: 5px;
+  width: 50%;
+  padding: 5px;
 }
 
 button {
-    background-color: rgb(68, 126, 68) !important;
+  background-color: rgb(68, 126, 68) !important;
 }
 
 /* Nosotros - Descripción */
 .descripción {
-    display: flex;
-    background-image: url(../assets/green\ and\ paper.jpg);
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    border: 5px solid rgba(39, 7, 7, .5);
-    text-align: center;
-    color: black;
-    margin: auto;
+  display: flex;
+  background-image: url(../assets/green\ and\ paper.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid rgba(39, 7, 7, 0.5);
+  text-align: center;
+  color: black;
+  margin: auto;
 }
 
 .párrafoDescripción {
-    padding: 2rem;
-    margin: auto;
+  padding: 2rem;
+  margin: auto;
 }
 
 /* Servicios */
-.gridServicios{
-    height: 160px;
-    border: 10px solid rgba(39, 7, 7, .5);
-    padding: 10px;
+.gridServicios {
+  height: 160px;
+  border: 10px solid rgba(39, 7, 7, 0.5);
+  padding: 10px;
 }
 
 .listaServicios {
-    list-style: none;
+  list-style: none;
 }
 
 /* Preguntas frecuentes */
 .containerPreguntas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-    margin-top: 10px;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  margin-top: 10px;
+  gap: 1rem;
 }
 
 .preguntas {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: beige;
-    border: 1px solid black;
-    font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: beige;
+  border: 1px solid black;
+  font-size: 15px;
 }
 
 .preguntas h6 p {
-    display: block;
+  display: block;
 }
+
+/*# sourceMappingURL=styles.css.map */
