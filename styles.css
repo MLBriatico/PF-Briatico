@@ -16,10 +16,6 @@ body {
     opacity: .5;
 }
 
-.navbar-toggler {
-color: rgb(35, 151, 35) !important;
-}
-
 nav i {
     padding: 20px;
 }
