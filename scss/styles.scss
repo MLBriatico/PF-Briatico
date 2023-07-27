@@ -5,47 +5,44 @@ box-sizing: border-box;
 font-family: "Raleway", sans-serif;
 }
 
-$ColorIconos: #617A55;
+$ColorIconos2: rgb(35, 151, 35);
 $ColorFondoCeldas: #FEE8B0;
-$ColorBordes: #884A39;
+$ColorBordes: rgba(39, 7, 7, .5);
 $ColorTexto: #025464;
-$FuenteTitulo: 35px;
-$Fuente-sub-parrafo: 30px;
-$Fuente-titulo-servicios: 25px;
-$Fuente-servicios: 16px;
+$FuenteTitulo: 45px;
+$Fuente-parrafo-servicios: 25px;
+$Fuente-nav: 20px;
+$Fuente-servicios-preguntas: 16px;
 
 body {
     background: url(../assets/WoodBackround.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 /* NavBar */
-.navbar {
-    background-color: beige;
+nav { 
+    background-color:$ColorFondoCeldas;
     opacity: .5;
-    height: 5rem;
     i {
         padding: 20px;
+        }
+    div ul {
+        gap: 2rem;
     }
-}
-
-// nav i {
-//     padding: 20px;
-// }
-
-nav div ul {
-    gap: 2rem;
-}
-
-nav ul li a {
-    color: brown !important;
-    font-weight: bold;
-    font-size: 20px;
+        li a {
+            color: $ColorTexto !important;
+            font-weight: bold;
+            font-size: $Fuente-nav;
+        }
+        button i {
+            color: $ColorIconos2;
+        }
 }
 
 a:hover {
-    color: black !important;
+color: black !important;
 }
 
 /* Banner en Index*/
@@ -53,68 +50,60 @@ a:hover {
     background-image: url(../assets/Escritorio\ de\ trabajo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    color:beige;
-    font-size: 50px;
+    color:rgb(70, 66, 66);
     margin-bottom: 0;
+    font-weight: bold;
+    h1 {
+        font-size: $FuenteTitulo;
+        }
+    p {
+        font-size: $Fuente-parrafo-servicios;
+        margin-left: 15px;
 }
-
-.jumbotron h1 {
-font-size: 50px;
-}
-
-.jumbotron p {
-font-size: 20px;
-margin-left: 15px;
 }
 
 section {
-background-color: bisque;
-display: flex;
-flex-direction: column;
-height: 100px;
-align-items: center;
-padding: 15px;
-}
-
-p {
-font-weight: bold;
+    background-color: $ColorFondoCeldas;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    align-items: center;
+    padding: 15px;
+        h2 {
+            font-size: $Fuente-parrafo-servicios;
+            font-weight: bold
+        }
+        p {
+            font-size: $Fuente-nav;
+        }
 }
 
 /* Servicios con Grid en Index*/
 article {
     background-image: url(../assets/Fondo\ beige.jpg);
-    height: 100px;
+    height: 130px;
     background-position: center;
     background-size: cover;
-    border: 6px solid rgba(39, 7, 7, .5);
+    border: 6px solid $ColorBordes;
     text-align: center;
     padding: 25px;
-    color: black;
+    color:$ColorTexto;
+    font-size: $Fuente-parrafo-servicios;
+    font-weight: bold;
 }
 
 /* Pie de página */
-footer div {
-    display: flex;
-    justify-content: center;
-}
-
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-image: radial-gradient(#b9a165, #FEE8B0);
+    font-size: $Fuente-nav;
 }
 
-img{
-    display: flex;
-    height: 30px;
-    width: 30px;
-}
-
-footer div div:hover {
+footer span:hover {
     background-color:rgb(235, 212, 179);
-}
-
-.notaAlPie {
-    font-size: 20px;
 }
 
 /* Banner Contacto */
@@ -130,15 +119,16 @@ form {
     height: 60%;
     align-items: center;
     gap: 5px;
-}
-
-.casillero {
-    width: 50%;
-    padding: 5px;
-}
-
-button {
-    background-color: rgb(68, 126, 68) !important;
+    .casillero {
+        width: 50%;
+        padding: 5px;
+        label {
+            font-size: $Fuente-nav;
+        }
+    }
+    button {
+        background-color: rgb(68, 126, 68) !important;
+    }
 }
 
 /* Nosotros - Descripción */
@@ -148,26 +138,32 @@ button {
     height: 500px;
     background-position: center;
     background-size: cover;
-    border: 5px solid rgba(39, 7, 7, .5);
+    border: 5px solid $ColorBordes;
     text-align: center;
     color: black;
     margin: auto;
-}
-
-.párrafoDescripción {
-    padding: 2rem;
-    margin: auto;
+    .párrafoDescripción {
+        font-size: $Fuente-servicios-preguntas;
+        padding: 2rem;
+        margin: auto;
+    }
 }
 
 /* Servicios */
 .gridServicios{
     height: 160px;
-    border: 10px solid rgba(39, 7, 7, .5);
+    border: 10px solid $ColorBordes;
     padding: 10px;
-}
-
-.listaServicios {
-    list-style: none;
+    .títuloServicios {
+        font-size: 20px;
+        }
+    .listaServicios {
+        list-style: none;
+        li {
+            font-size: $Fuente-servicios-preguntas;
+            font-weight: lighter;
+        }
+    }
 }
 
 /* Preguntas frecuentes */
@@ -178,17 +174,15 @@ button {
     height: 500px;
     margin-top: 10px;
     gap: 1rem;
-}
-
-.preguntas {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: beige;
-    border: 1px solid black;
-    font-size: 15px;
-}
-
-.preguntas h6 p {
-    display: block;
+    .preguntas {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: $ColorFondoCeldas;
+        border: 3px solid $ColorBordes;
+        font-size: $Fuente-servicios-preguntas;
+    }
+    .preguntas h6 p {
+        display: block;
+    }
 }

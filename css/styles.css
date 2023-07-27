@@ -10,26 +10,27 @@ body {
   background: url(../assets/WoodBackround.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* NavBar */
-.navbar {
-  background-color: beige;
+nav {
+  background-color: #FEE8B0;
   opacity: 0.5;
-  height: 5rem;
 }
-.navbar i {
+nav i {
   padding: 20px;
 }
-
 nav div ul {
   gap: 2rem;
 }
-
-nav ul li a {
-  color: brown !important;
+nav li a {
+  color: #025464 !important;
   font-weight: bold;
   font-size: 20px;
+}
+nav button i {
+  color: rgb(35, 151, 35);
 }
 
 a:hover {
@@ -41,68 +42,60 @@ a:hover {
   background-image: url(../assets/Escritorio\ de\ trabajo.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: beige;
-  font-size: 50px;
+  color: rgb(70, 66, 66);
   margin-bottom: 0;
+  font-weight: bold;
 }
-
 .jumbotron h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
-
 .jumbotron p {
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 15px;
 }
 
 section {
-  background-color: bisque;
+  background-color: #FEE8B0;
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 120px;
   align-items: center;
   padding: 15px;
 }
-
-p {
+section h2 {
+  font-size: 25px;
   font-weight: bold;
+}
+section p {
+  font-size: 20px;
 }
 
 /* Servicios con Grid en Index*/
 article {
   background-image: url(../assets/Fondo\ beige.jpg);
-  height: 100px;
+  height: 130px;
   background-position: center;
   background-size: cover;
   border: 6px solid rgba(39, 7, 7, 0.5);
   text-align: center;
   padding: 25px;
-  color: black;
+  color: #025464;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* Pie de página */
-footer div {
-  display: flex;
-  justify-content: center;
-}
-
 footer {
   display: flex;
-  justify-content: center;
-}
-
-img {
-  display: flex;
-  height: 30px;
-  width: 30px;
-}
-
-footer div div:hover {
-  background-color: rgb(235, 212, 179);
-}
-
-.notaAlPie {
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-image: radial-gradient(#b9a165, #FEE8B0);
   font-size: 20px;
+}
+
+footer span:hover {
+  background-color: rgb(235, 212, 179);
 }
 
 /* Banner Contacto */
@@ -119,13 +112,14 @@ form {
   align-items: center;
   gap: 5px;
 }
-
-.casillero {
+form .casillero {
   width: 50%;
   padding: 5px;
 }
-
-button {
+form .casillero label {
+  font-size: 20px;
+}
+form button {
   background-color: rgb(68, 126, 68) !important;
 }
 
@@ -141,8 +135,8 @@ button {
   color: black;
   margin: auto;
 }
-
-.párrafoDescripción {
+.descripción .párrafoDescripción {
+  font-size: 16px;
   padding: 2rem;
   margin: auto;
 }
@@ -153,9 +147,15 @@ button {
   border: 10px solid rgba(39, 7, 7, 0.5);
   padding: 10px;
 }
-
-.listaServicios {
+.gridServicios .títuloServicios {
+  font-size: 20px;
+}
+.gridServicios .listaServicios {
   list-style: none;
+}
+.gridServicios .listaServicios li {
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 /* Preguntas frecuentes */
@@ -167,17 +167,15 @@ button {
   margin-top: 10px;
   gap: 1rem;
 }
-
-.preguntas {
+.containerPreguntas .preguntas {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: beige;
-  border: 1px solid black;
-  font-size: 15px;
+  background-color: #FEE8B0;
+  border: 3px solid rgba(39, 7, 7, 0.5);
+  font-size: 16px;
 }
-
-.preguntas h6 p {
+.containerPreguntas .preguntas h6 p {
   display: block;
 }
 
